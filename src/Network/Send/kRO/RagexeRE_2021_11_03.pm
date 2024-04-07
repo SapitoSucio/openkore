@@ -22,7 +22,7 @@ sub new {
 	my $self = $class->SUPER::new(@_);
 
 	my %packets = (
-		'0436' => ['map_login', 'a4 a4 a4 V2 C', [qw(accountID charID sessionID unknown tick sex)]],#23
+		'0436' => ['map_login', 'a4 a4 a4 V4 C', [qw(accountID charID sessionID unknown tick sex)]],#23
 	);
 
 	$self->{packet_list}{$_} = $packets{$_} for keys %packets;

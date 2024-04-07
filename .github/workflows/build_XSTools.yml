@@ -16,6 +16,7 @@ on:
     tags-ignore:
       - '*'
   pull_request:
+  workflow_dispatch:
 
 jobs:
 
